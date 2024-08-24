@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+.home-bg {
+    background: linear-gradient(to right, #05016cd3, #4b16bdcd);
+}
+
+.home-img {
+    height: 35em;
+    width: 40em !important;
+}
+
+.brand-bg {
+    background: linear-gradient(to bottom, #2E08C7, #7E08C7);
+}
+
+.img-box {
+    height: 14rem;
+    width: 100%;
+    overflow: hidden;
+
+    img {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.hamburger:hover>.ham-menu {
+    display: inline-block;
+}
+
+.courses-bg {
+    background: linear-gradient(to bottom right, #739FE8, #4F18CA);
+}
+
+.Courses {
+    background: linear-gradient(to bottom left, #E441FF, #1a01f876, #00b3ff24);
+}
+
+.girl-img {
+    background-image: url(./images/girl.svg);
+    background-size: 100% 100%;
+    height: 80vh;
+    width: 100%;
+}
+
+.circle-1 {
+    background: rgba(255, 255, 255, 0.244);
+}
+
+.circle-2 {
+    border: .1px solid rgba(255, 255, 255, 0.638);
+    background: rgba(255, 255, 255, 0.638);
+}
+
+.circle-3 {
+    border: .1px solid rgba(255, 255, 255, 0.638);
+    background: linear-gradient(to right, #7F56D9, #21B573);
+}
+
+.circle-1:hover>.circle-2,
+.circle-1:hover {
+    transform: scale(1.1);
+}
+
+.footer-bg {
+    background: linear-gradient(to top left, #477AE3, #931BBD);
+}
+
+.bg-brang {
+    background: rgba(255, 255, 255, 0.219);
+}
+
+.righteous {
+    font-family: "Righteous", sans-serif;
+}
+
+.rowdies {
+    font-family: "Rowdies", sans-serif;
+}
+
+.saira {
+    font-family: "Saira", sans-serif;
+}
+
+@media screen and (max-width:768px) {
+    .home-img {
+        height: 25em;
+        width: 20em !important;
+    }
+}

@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Askmeidentity</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body class="righteous">
+    <nav class="flex justify-around px-10 py-5 items-center">
+        <div><img src="./images/logo.png" alt="404" class="h-8 sm:h-10 md:h-12 lg:h-16 "></div>
+        <div class="flex flex-row gap-5 text-semibold md:text-sm lg:text-lg hidden sm:inline-flex">
+            <p>Home</p>
+            <p>About</p>
+            <p>Courses</p>
+            <p>Contact</p>
+        </div>
+        <div class="flex flex-row relative">
+            <div class="hidden sm:inline-flex gap-1 md:gap-3 lg:gap-5">
+                <div
+                    class="absolute bg-green-600 rounded-full h-5 w-5 flex justify-around items-center text-white left-4 -top-2 text-xs">
+                    0</div>
+                <img src="./images/nav-icon-1.svg" alt="404" class="scale-75 lg:scale-100">
+                <img src="./images/nav-icon-2.svg" alt="404" class="scale-75 lg:scale-100">
+                <img src="./images/nav-icon-3.svg" alt="404" class="scale-75 lg:scale-100">
+            </div>
+            <button class="hamburger"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                    class="bi bi-list block sm:hidden" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                </svg>
+                <div class="ham-menu absolute mt-6 w-[50vw] bg-gray-300 z-50 flex -left-[100px] hidden">
+                    <div class="flex flex-col gap-3 text-semibold text-lg p-5 text-left ">
+                        <p>Home</p>
+                        <p>About</p>
+                        <p>Courses</p>
+                        <p>Contact</p>
+                    </div>
+                </div>
+            </button>
+        </div>
+
+        <div class="flex items-center gap-5">
+            <a href="#" class="text-black underline underline-offset-4 text-sm md:text-lg">Login</a>
+            <button
+                class="text-white border px-5 py-2 bg-gradient-to-r from-indigo-700 to-violet-700 rounded-md text-sm md:text-lg">Signup
+            </button>
+        </div>
+    </nav>
+
+    <section class="home-bg relative h-[130vh] sm:h-[125vh] md:h-screen text-white">
+        <div class="absolute z-0 flex w-full justify-between flex-col md:flex-row">
+            <img src="./images/Ellipse-small.svg" alt="404" class="h-[85vh]">
+            <img src="./images/Ellipse-big.svg" alt="404" class="h-[82vh] md:w-1/2 flex mt-0 md:mt-32 w-full">
+        </div>
+        <div class="absolute z-10 flex px-12 lg:px-20 xl:px-28 2xl:px-36 flex-col md:flex-row">
+            <div class="pt-12 md:pt-28 me-5">
+                <p class="text-lg">Successful coaches are visionaries</p>
+                <p class="text-3xl sm:text-4xl md:text-3xl lg:text-5xl font-bold my-8">Good
+                    <span class="text-[#0E38CD]">coaching</span> is good
+                    teaching &
+                    nothing else.
+                </p>
+                <div class="text-lg flex gap-5 my-10 lg:my-20 sm:flex-row md:flex-col lg:flex-row flex-col">
+                    <button class="border-2 border-white rounded-lg px-5 py-3">View Courses</button>
+                    <button>Get Free Consultation</button>
+                </div>
+                <div
+                    class="bg-white px-5 py-2 w-5/6 sm:w-5/6 md:w-2/4 lg:w-full flex flex-col sm:flex-row rounded-lg absolute lg:relative items-center">
+                    <input type="text"
+                        class="w-full text-black my-3 sm:my-0 shadow p-3 sm:shadow-none sm:p-0 rounded-md"
+                        placeholder="What do you want to learn today?">
+                    <button
+                        class="flex gap-3 items-center text-white border px-5 py-2 bg-gradient-to-r from-indigo-700 to-violet-700 rounded-md text-sm md:text-lg h-fit w-fit"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-search" viewBox="0 0 16 16">
+                            <path
+                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                        </svg>Search</button>
+                </div>
+            </div>
+            <div class="pt-40 sm:pt-24 md:pt-28 flex flex-col justify-between">
+                <div class="flex flex-row gap-5 ms-0 sm:ms-20">
+                    <div><img src="./images/-''-.svg" alt=""></div>
+                    <div class="w-5/6 sm:w-2/3">
+                        <p class="font-bold">Shyam</p>
+                        <p>In a coaching role, you ask the questions and rely more on your
+                            staff, who become the experts, to provide the information.</p>
+                        <p class="text-[#0094E7] font-semibold mt-3">4.9</p>
+                    </div>
+                </div>
+                <div>
+                    <img src="./images/home-arch.png" alt="404" class="h-56 hidden md:block">
+                </div>
+            </div>
+            <div class="flex h-auto md:h-screen justify-around md:justify-none">
+                <img src="./images/home-img.png" alt="404" class="mt-0 sm:mt-14 md:mt-auto home-img">
+            </div>
+        </div>
+    </section>
+    <div class="brand-bg px-16 py-8 flex flex-wrap justify-evenly gap-8">
+        <img src="./images/brand6.svg" alt="404">
+        <img src="./images/brand5.svg" alt="404">
+        <img src="./images/brand4.svg" alt="404">
+        <img src="./images/brand3.svg" alt="404">
+        <img src="./images/brand2.svg" alt="404">
+        <img src="./images/brand1.svg" alt="404">
+    </div>
+    <section class="bg-gradient-to-t from-sky-200 via-white to-white p-20 relative">
+        <img src="./images/circle.svg" alt="404" class="absolute">
+        <p class="text-center font-bold text-3xl rowdies">Featured <span class="text-[#0E38CD]">Course</span></p>
+        <p class="text-center my-4 text-semibold text-xl">The feature courses are we invented our teaching part</p>
+
+        <div
+            class="grid grid-row-5 md:grid-rows-3 lg:grid-rows-2 md:grid-flow-col gap-4 mt-20 px-0 sm:px-10 md:px-10 lg:px-28 saira">
+            <div class="shadow bg-white rounded-[13px]">
+                <div class="img-box overflow-hidden rounded-t-[13px]"><img src="./images/Featured-img1.svg" alt="">
+                </div>
+                <div class="text-xs flex justify-between p-5">
+                    <p>1,957 Students</p>
+                    <p>01h 59m</p>
+                </div>
+                <p class="font-bold px-5">Motion Graphics: Create a Nice
+                    Typography Animation</p>
+                <div class="flex justify-between p-5 text-xs">
+                    <p class="font-semibold">Rs.499</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-cart3" viewBox="0 0 16 16">
+                        <path
+                            d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+                    </svg>
+                </div>
+            </div>
+            <div class="shadow bg-white rounded-[13px]">
+                <div class="img-box overflow-hidden rounded-t-[13px]"><img src="./images/Featured-img6.svg" alt="">
+                </div>
+                <div class="flex justify-between text-xs p-5">
+                    <p>9,575 Students</p>
+                    <p>01h 59m</p>
+                </div>
+                <p class="font-bold px-5">Advance PHP knowledge with JS to
+                    make smart web</p>
+                <div class="flex justify-between text-xs p-5">
+                    <p>Rs.499</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-cart3" viewBox="0 0 16 16">
+                        <path
+                            d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+                    </svg>
+                </div>
+            </div>
+            <div class="shadow bg-white rounded-[13px]">
+                <div class="img-box overflow-hidden rounded-t-[13px]"><img src="./images/Featured-img2.svg" alt="">
+                </div>
+                <div class="flex justify-between text-xs p-5">
+                    <p>2957 Students</p>
+                    <p>02h 49m</p>
+                </div>
+                <p class="font-bold px-5">Education Software and PHP and JS
+                    System Script</p>
+                <div class="flex justify-between text-xs p-5">
+                    <p>Rs.499</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-cart3" viewBox="0 0 16 16">
+                        <path
+                            d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+                    </svg>
+                </div>
+            </div>
+            <div class="shadow bg-white rounded-[13px]">
+                <div class="img-box overflow-hidden rounded-t-[13px]"><img src="./images/Featured-img5.svg" alt="">
+                </div>
+                <div class="flex justify-between text-xs p-5">
+                    <p>5,457 Students</p>
+                    <p>01h 49m</p>
+                </div>
+                <p class="font-bold px-5">The Complete Financial Analyst
+                    Training & Investing</p>
+                <div class="flex justify-between text-xs p-5">
+                    <p>Rs.499</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-cart3" viewBox="0 0 16 16">
+                        <path
+                            d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+                    </svg>
+                </div>
+            </div>
+            <div class="shadow bg-white rounded-[13px]">
+                <div class="img-box overflow-hidden rounded-t-[13px]"><img src="./images/Featured-img3.svg" alt="">
+                </div>
+                <div class="flex justify-between text-xs p-5">
+                    <p>595 Students</p>
+                    <p>01h 49m</p>
+                </div>
+                <p class="font-bold px-5">Marketing 2023: Complete Guide To
+                    Instagram Growth</p>
+                <div class="flex justify-between text-xs p-5">
+                    <p>Rs.499</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-cart3" viewBox="0 0 16 16">
+                        <path
+                            d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+                    </svg>
+                </div>
+            </div>
+            <div class="shadow bg-white rounded-[13px]">
+                <div class="img-box overflow-hidden rounded-t-[13px]"><img src="./images/Featured-img4.svg" alt="">
+                </div>
+                <div class="flex justify-between text-xs p-5">
+                    <p>458 Students</p>
+                    <p>03h 00m</p>
+                </div>
+                <p class="font-bold px-5">Learn 3D Modelling and Design
+                    for Beginners</p>
+                <div class="flex justify-between text-xs p-5">
+                    <p>Rs.499</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-cart3" viewBox="0 0 16 16">
+                        <path
+                            d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <div class="w-full flex justify-around">
+            <button
+                class="text-white border px-5 py-2 bg-gradient-to-r from-indigo-700 to-violet-700 rounded-lg text-lg mt-20">Explore
+                courses</button>
+        </div>
+    </section>
+    <section class="courses-bg text-white py-20">
+        <div class="relative text-center">
+            <img src="./images/cor-arch.png" alt="404" class="absolute h-56">
+            <p class="text-3xl font-semibold">Why <span class="text-[#0E38CD]">learn</span> with our courses?</p>
+            <p class="text-sm leading-6 py-7 saira">We are providing the best courses and top classes. And
+                <br>extradinery
+                placement
+                training.....
+            </p>
+        </div>
+        <div class="flex justify-evenly px-16 gap-10 pt-20 flex-wrap">
+            <div class="text-center w-max sm:w-3/6 md:w-1/6">
+                <img src="./images/cou-1.svg" alt="404" class="mx-auto">
+                <p class="my-6 font-semibold text-lg">01. Learn</p>
+                <p>Learn continually. There is always
+                    “one more thing”to learn.</p>
+            </div>
+            <img src="./images/Line.svg" alt="404" class="hidden md:block">
+            <div class="text-center w-max sm:w-3/6 md:w-1/6">
+                <img src="./images/cou-2.svg" alt="404" class="mx-auto">
+                <p class="my-6 font-semibold text-lg">02. Graduate</p>
+                <p>Be bold,be courageous,
+                    be your best.</p>
+            </div>
+            <img src="./images/Line.svg" alt="404" class="hidden md:block">
+            <div class="text-center w-max sm:w-3/6 md:w-1/6">
+                <img src="./images/cor-3.svg" alt="404" class="mx-auto">
+                <p class="my-6 font-semibold text-lg">03. Work</p>
+                <p>Great companies are built in
+                    the office,with hard work put
+                    in by team.</p>
+            </div>
+        </div>
+    </section>
+    <section class="bg-gradient-to-t from-sky-200 via-white to-white p-20 text-center">
+        <p class="text-3xl font-semibold">Top <span class="text-[#0E38CD]">Categories</span></p>
+        <p class="text-md leading-6 py-4 font-semibold">100+ unique online course list designs</p>
+        <div class="flex justify-around gap-3 xl:gap-0 mt-20 flex-wrap gap-y-7">
+            <div class="bg-white w-40 p-5 text-center shadow-md rounded-lg">
+                <img src="./images/cat1.svg" alt="404" class="mx-auto">
+                <p class="font-bold my-6">Digtal <br>Marketing</p>
+                <p class="text-xs">25 Courses</p>
+            </div>
+            <div class="bg-white w-40 p-5 text-center shadow-md rounded-lg">
+                <img src="./images/cat2.svg" alt="404" class="mx-auto">
+                <p class="font-bold my-6">Web <br>Development</p>
+                <p class="text-xs">16 Courses</p>
+            </div>
+            <div class="bg-white w-40 p-5 text-center shadow-md rounded-lg">
+                <img src="./images/cat3.svg" alt="404" class="mx-auto">
+                <p class="font-bold my-6">Art & <br>Humanities</p>
+                <p class="text-xs">76 Courses</p>
+            </div>
+            <div class="bg-white w-40 p-5 text-center shadow-md rounded-lg">
+                <img src="./images/cat4.svg" alt="404" class="mx-auto">
+                <p class="font-bold my-6">Personal <br>Development</p>
+                <p class="text-xs">22 Courses</p>
+            </div>
+            <div class="bg-white w-40 p-5 text-center shadow-md rounded-lg">
+                <img src="./images/cat5.svg" alt="404" class="mx-auto">
+                <p class="font-bold my-6">IT and <br>Software</p>
+                <p class="text-xs">110 Courses</p>
+            </div>
+            <div class="bg-white w-40 p-5 text-center shadow-md rounded-lg">
+                <img src="./images/cat6.svg" alt="404" class="mx-auto">
+                <p class="font-bold my-6">Graphic <br>Design</p>
+                <p class="text-xs">85 Courses</p>
+            </div>
+        </div>
+    </section>
+    <section class="px-5 md:px-10 lg:px-20 text-white relative">
+        <div
+            class="relative flex justify-around flex-nowrap Courses py-10 px-0 lg:px-10 my-20 w-[80%] mx-auto rounded-lg text-center">
+            <div class="absolute -bottom-10 -left-10 z-10">
+                <img src="./images/Polygon.svg" alt="404">
+            </div>
+            <div class="w-[60%] hidden md:block">
+                <img src="./images/left-1.svg" alt="404" class="">
+                <img src="./images/left-2.svg" alt="404" class="mx-auto my-7">
+                <img src="./images/left-3.svg" alt="404" class="ms-10">
+            </div>
+            <div class="w-full relative px-5 md:px-0">
+                <div class="absolute left-40 -top-10 -z-10">
+                    <img src="./images/Polygon.svg" alt="404" class="h-16 w-16">
+                </div>
+                <p class="font-bold text-3xl">Subscribe For Get Update <br>
+                    Every New Courses</p>
+                <p class="my-10">20k+ students daily learn with Eduvi. Subscribe for new courses.</p>
+                <div class="flex flex-wrap sm:flex-nowrap justify-center w-full">
+                    <input type="text" class="w-full px-3 py-3 bg-white opacity-50 rounded sm:rounded-l-md" name="#"
+                        id="#" placeholder="enter your email">
+                    <button class="bg-[#0E38CD] px-5 py-3 rounded sm:rounded-r-md mt-5 sm:mt-0">Subscribe</button>
+                </div>
+            </div>
+            <div class="w-[60%] hidden md:block">
+                <img src="./images/right-1.svg" alt="404" class="ms-auto mr-10">
+                <img src="./images/right-2.svg" alt="404" class="ms-16 my-7">
+                <img src="./images/right-3.svg" alt="404" class="ms-auto">
+            </div>
+        </div>
+        <div class="flex justify-end z-10">
+            <img src="./images/Polygon-dark.svg" alt="404" class="h-16 w-16">
+        </div>
+    </section>
+    <section>
+        <div class="px-5 md:px-20">
+            <div class="girl-img flex justify-center items-center">
+                <div class="h-20 w-20 rounded-full circle-1">
+                    <div class="h-16 w-16 rounded-full circle-2 mx-auto mt-2">
+                        <div class="h-12 w-12 rounded-full circle-3 mx-auto mt-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="white"
+                                class="bi bi-play-fill mx-auto items-center mt-1" viewBox="0 0 16 16">
+                                <path
+                                    d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-gradient-to-t from-sky-200 via-sky-100 to-white py-20">
+        <div class="text-center mb-28 relative py-10">
+            <img src="./images/Ellipse 1217.svg" alt="404" class="absolute ps-32">
+            <p class="text-[#0E38CD] text-3xl font-bold">Testimonials</p>
+            <p class="py-5">What our student say about us</p>
+        </div>
+        <div class="my-10 flex flex-wrap md:flex-nowrap justify-center gap-5 md:gap-0">
+            <div class="bg-white shadow-lg w-[30%] min-w-[230px] mt-10 md:mt-0 px-10 md:px-14 py-6 md:-mr-10">
+                <img src="./images/review-girl.svg" alt="404" class="mx-auto -mt-16">
+                <p class="my-5">Such an amazing traniner and easily understand the entire
+                    syllabus, and the guidence will be super and good to the way of explaning.</p>
+                <img src="./images/star.svg" alt="404">
+            </div>
+            <div class="bg-white shadow-lg w-[30%] min-w-[230px] mt-10 md:-mt-8 md:mb-8 px-10 py-6 z-10">
+                <img src="./images/review-girl.svg" alt="404" class="mx-auto -mt-16">
+                <p class="my-5">Such an amazing traniner and easily understand the entire
+                    syllabus, and the guidence will be super and good to the way of explaning.</p>
+                <img src="./images/star.svg" alt="404">
+            </div>
+            <div class="bg-white shadow-lg w-[30%] min-w-[230px] mt-10 md:mt-0 px-10 md:px-14 py-6 md:-ml-10">
+                <img src="./images/review-girl.svg" alt="404" class="mx-auto -mt-16">
+                <p class="my-5">Such an amazing traniner and easily understand the entire
+                    syllabus, and the guidence will be super and good to the way of explaning.</p>
+                <img src="./images/star.svg" alt="404">
+            </div>
+        </div>
+        <div class="flex justify-end px-10 gap-5">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#0E38CD"
+                class="bi bi-arrow-left-circle" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#0E38CD"
+                class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z" />
+            </svg>
+        </div>
+    </section>
+    <footer class="footer-bg pt-20">
+        <div class="flex justify-around flex-wrap gap-10 font-bold px-10 items-center ">
+            <div class="w-[25%] grid gap-y-10 min-w-[270px]">
+                <p class="text-xl">Connect</p>
+                <img src="./images/logo.png" alt="">
+                <p class="font-normal min-w-[270px]">Sri Jagannath Nivas,8-1-164/345/A/1,
+                    Pragati Colony, Mailardevpally, Nawab
+                    Saheb Kunta, Hyd, 500005</p>
+            </div>
+            <div class="grid gap-y-3">
+                <p class="text-xl">Classes</p>
+                <p>Classroom courses</p>
+                <p>Virtual classroom courses</p>
+                <p>E-learning courses</p>
+                <p>Video Courses</p>
+                <p>Offline Courses</p>
+            </div>
+            <div class="grid gap-y-3">
+                <p class="text-xl">Community</p>
+                <p>Learners</p>
+                <p>Parteners</p>
+                <p>Developers</p>
+                <p>Transactions</p>
+                <p>Blog</p>
+            </div>
+            <div class="grid gap-y-3">
+                <p class="text-xl">Quick links</p>
+                <p>Home</p>
+                <p>Professional Education</p>
+                <p>Courses</p>
+                <p>Admissions</p>
+                <p>Testimonial</p>
+                <p>Programs</p>
+            </div>
+            <div class="grid gap-y-3">
+                <p class="text-xl">More</p>
+                <p>Press</p>
+                <p>Investors</p>
+                <p>Terms</p>
+                <p>Privacy</p>
+                <p>Help</p>
+                <p>Contact</p>
+            </div>
+        </div>
+        <div class="flex justify-center gap-5 bg-brang mt-5 py-5">
+            <div class="bg-white h-16 w-16 rounded-full flex justify-center items-center"><img
+                    src="./images/Instagram.svg" alt="404" class="h-10 w-10"></div>
+            <div class="bg-white h-16 w-16 rounded-full flex justify-center items-center"><img
+                    src="./images/WhatsApp.svg" alt="404" class="h-10 w-10"></div>
+            <div class="bg-white h-16 w-16 rounded-full flex justify-center items-center"><img
+                    src="./images/Twitter.svg" alt="404" class="h-10 w-10"></div>
+            <div class="bg-white h-16 w-16 rounded-full flex justify-center items-center"><img
+                    src="./images/LinkedIn.svg" alt="404" class="h-10 w-10"></div>
+            <div class="bg-white h-16 w-16 rounded-full flex justify-center items-center"><img
+                    src="./images/YouTube.svg" alt="404" class="h-10 w-10"></div>
+        </div>
+        <p class="text-center text-white">Copyright @ 2023 askmeidentity. All Rights Reserved</p>
+    </footer>
+
+</body>
+
+</html>
